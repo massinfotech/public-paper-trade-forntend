@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+
+
+.btn {
+     @apply cursor-pointer inline-flex justify-center py-1 px-1 border border-transparent shadow  font-medium rounded 
+    dark:text-gray-300 dark:bg-gray-600 dark:hover:bg-gray-500 dark:focus:ring-gray-500 
+    dark:drop-shadow-md
+    bg-gray-200 hover:bg-gray-400 hover:text-gray-200  
+    focus:outline-none focus:ring-2 focus:ring-offset-2 ; 
+}
+
+.btn-nonrounded {
+    @apply cursor-pointer inline-flex justify-center py-1 px-1 border border-transparent shadow-sm  font-medium 
+    dark:text-white dark:bg-gray-500 dark:hover:bg-gray-700 dark:focus:ring-gray-500
+    bg-gray-200 hover:bg-gray-400 hover:text-gray-200
+    focus:outline-none focus:ring-2 focus:ring-offset-2 ;
+}
+
+.btn i{
+    font-size: 12px;
+}
+
+.btn .lbltext{
+    font-size: 8px;
+}
+
+.font13px{
+    font-size: 13px;
+}
+
+.btn-mini{
+  @apply  cursor-pointer text-xxs  justify-center rounded border-none border border-transparent shadow-sm 
+  dark:text-white dark:bg-gray-500 dark:hover:bg-gray-700 dark:focus:ring-gray-500
+  bg-gray-300 hover:bg-gray-400 hover:text-gray-200
+  focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+
+.btn-ltp{
+
+  /* @apply cursor-pointer inline-flex justify-center py-1 px-1 border border-transparent shadow  font-medium rounded 
+    dark:text-yellow-500 dark:bg-gray-600 dark:hover:bg-gray-500 dark:focus:ring-gray-500 
+    dark:drop-shadow-md
+    bg-gray-200 hover:bg-gray-400 hover:text-yellow-600
+    focus:outline-none focus:ring-2 focus:ring-offset-2 
+    text-xs    ;  */
+
+  @apply  cursor-pointer text-xs p-1 text-center w-full rounded border-none border border-transparent shadow
+   dark:bg-gray-600 dark:hover:bg-gray-500 dark:focus:ring-gray-500  text-yellow-700  dark:drop-shadow-md
+   bg-gray-200 hover:bg-gray-400 dark:text-yellow-500
+    focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+.btn-mini i{
+  font-size: 12px;
+}
+
+.mini-edit{
+    @apply w-12 px-1 py-1 rounded-md focus:outline-none;
+}
+
+.normal-edit {
+  @apply w-28 px-1 py-1 rounded-md focus:outline-none bg-gray-300 dark:bg-gray-600;
+}
+
+.mini-edit-nonrounded {
+    @apply w-12 px-1 py-1 focus:outline-none;
+}
+
+.chart-mini-edit{
+  @apply  text-xs w-12 h-8 px-1 rounded-md text-right  border border-gray-300 bg-gray-400 dark:border-gray-600 bg-transparent focus:outline-none;
+}
+
+.mini-checkbox{
+  @apply rounded border-none focus:outline-none bg-gray-300 dark:bg-gray-600 checked:text-gray-400 dark:checked:text-gray-700;
+}
+
+.tooltiptext{
+  @apply  hidden absolute text-xxs w-20 bg-gray-500 text-white text-center py-1 rounded-md z-10 left-2 -ml-10    
+  bottom-7 after:top-full 
+  after:absolute after:left-2/4 after:border-4 after:border-solid 
+  transition-opacity duration-300 ;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  /* background-color: rgba(71, 85, 105, var(--tw-bg-opacity)); */
+   background-color: rgba(148, 163, 184, var(--tw-bg-opacity)); 
+  border-radius: 10px;
+
+  /* background-color: rgba(255, 5, 115, var(--tw-border-opacity)); */
+}
+
+::-webkit-scrollbar-thumb {
+  /* background-color: #d4aa70; */
+  background-color: rgba(71, 85, 105, var(--tw-border-opacity));
+  border-radius: 10px;
+}
+
+
+/*Hide number arrow*/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+
+
+@tailwind utilities; 
